@@ -130,47 +130,84 @@
     </section>
 
     <!-- ==================== 2. QUIÉNES SOMOS ==================== -->
-    <section id="quienes-somos" class="bg-ceac-lime py-16 lg:py-24">
-      <div class="max-w-6xl mx-auto px-4 lg:px-8">
+    <section id="quienes-somos" class="bg-ceac-lime py-16 lg:py-20">
+      <div class="max-w-5xl mx-auto px-4 lg:px-8">
+
+        <!-- Encabezado centrado -->
         <div class="text-center max-w-2xl mx-auto reveal">
-          <h2 class="font-display italic text-3xl md:text-4xl text-ceac-blue mb-3">Quiénes somos</h2>
-          <p class="text-ceac-blue/85 text-sm md:text-base">
-            Más de 80 años formando a profesionales con vocación de servicio en toda España.
+          <h2 class="font-display italic text-3xl md:text-4xl lg:text-5xl text-ceac-blue mb-4">
+            Quiénes somos
+          </h2>
+          <p class="text-ceac-blue text-sm md:text-base font-semibold mb-3">
+            Más de 80 años formando a profesionales que transforman su futuro.
+          </p>
+          <p class="text-ceac-blue/85 text-xs md:text-sm leading-relaxed">
+            CEAC es un centro de formación para el empleo con una trayectoria de décadas en las que ha
+            impulsado la carrera profesional de más de tres millones de alumnos.
           </p>
         </div>
 
-        <div class="grid grid-cols-3 gap-4 md:gap-8 text-center mt-14 reveal">
-          <div>
-            <p class="font-display italic text-5xl md:text-7xl font-medium text-ceac-blue leading-none">+3M</p>
-            <p class="mt-2 text-xs md:text-sm text-ceac-blue/80">alumnos formados</p>
-          </div>
-          <div class="border-x border-ceac-blue/15">
-            <p class="font-display italic text-5xl md:text-7xl font-medium text-ceac-blue leading-none">+80</p>
-            <p class="mt-2 text-xs md:text-sm text-ceac-blue/80">años de experiencia</p>
-          </div>
-          <div>
-            <p class="font-display italic text-5xl md:text-7xl font-medium text-ceac-blue leading-none">+250</p>
-            <p class="mt-2 text-xs md:text-sm text-ceac-blue/80">docentes en activo</p>
-          </div>
+        <!-- 3 tarjetas blancas con métricas -->
+        <div class="grid grid-cols-3 gap-3 md:gap-5 mt-10 reveal">
+          <article class="bg-white rounded-2xl py-7 md:py-10 px-3 text-center">
+            <p class="font-display italic text-3xl md:text-5xl lg:text-6xl text-ceac-blue leading-none">+3M</p>
+            <p class="mt-3 text-[10px] md:text-xs text-ceac-blue/80">de alumnos formados</p>
+          </article>
+          <article class="bg-white rounded-2xl py-7 md:py-10 px-3 text-center">
+            <p class="font-display italic text-3xl md:text-5xl lg:text-6xl text-ceac-blue leading-none">+80</p>
+            <p class="mt-3 text-[10px] md:text-xs text-ceac-blue/80">años de experiencia</p>
+          </article>
+          <article class="bg-white rounded-2xl py-7 md:py-10 px-3 text-center">
+            <p class="font-display italic text-3xl md:text-5xl lg:text-6xl text-ceac-blue leading-none">+250</p>
+            <p class="mt-3 text-[10px] md:text-xs text-ceac-blue/80">docentes en activo</p>
+          </article>
         </div>
 
-        <!-- Bienvenido GIGANTE -->
-        <div class="mt-16 text-center reveal">
-          <p class="font-display italic text-6xl md:text-8xl lg:text-9xl text-ceac-blue leading-[0.95]">
-            Bienvenido <span class="inline-block ml-2 not-italic" aria-hidden="true">👋</span>
-          </p>
+        <!-- Vídeo "Bienvenido" con botón play -->
+        <div class="mt-6 md:mt-8 reveal">
+          <button type="button" id="welcomeVideo"
+                  class="group relative w-full aspect-[16/7] md:aspect-[16/6] rounded-2xl overflow-hidden bg-gray-400 focus:outline-none focus:ring-4 focus:ring-ceac-blue/30"
+                  aria-label="Reproducir vídeo de bienvenida">
+            <!-- TODO: Sustituir por poster real del vídeo. Foto en escala de grises por ahora -->
+            <img src="assets/img/hero-recepcion.png"
+                 alt=""
+                 aria-hidden="true"
+                 class="absolute inset-0 w-full h-full object-cover opacity-50 grayscale" />
+            <!-- Capa gris para imitar el placeholder del diseño -->
+            <div class="absolute inset-0 bg-gray-500/50"></div>
+
+            <!-- Texto "Bienvenido 👋" -->
+            <span class="absolute inset-0 flex items-center justify-center">
+              <span class="font-display italic text-ceac-blue text-5xl md:text-7xl lg:text-8xl leading-none drop-shadow-sm">
+                Bienvenido <span class="inline-block ml-2 not-italic" aria-hidden="true">👋</span>
+              </span>
+            </span>
+
+            <!-- Botón play centrado -->
+            <span class="absolute inset-0 flex items-center justify-center">
+              <span class="w-14 h-14 md:w-16 md:h-16 rounded-full bg-white/95 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="#0017EC" aria-hidden="true">
+                  <path d="M8 5v14l11-7z"/>
+                </svg>
+              </span>
+            </span>
+          </button>
         </div>
       </div>
     </section>
 
-    <!-- ==================== Agencia de colocación ==================== -->
-    <section class="py-10 border-b border-gray-200">
-      <div class="max-w-6xl mx-auto px-4 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-5">
-        <div>
-          <p class="font-display italic text-2xl text-ceac-blue">Somos Agencia de Colocación</p>
-          <p class="text-sm text-gray-700 mt-1">Autorizada nº 1200000120</p>
+    <!-- ==================== Agencia de colocación (bloque azul claro) ==================== -->
+    <section class="bg-white py-10">
+      <div class="max-w-5xl mx-auto px-4 lg:px-8">
+        <div class="bg-ceac-skyBg rounded-2xl px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-4 reveal">
+          <div>
+            <p class="font-display italic text-xl md:text-2xl text-ceac-blue leading-tight">Somos Agencia de Colocación</p>
+            <p class="text-xs md:text-sm text-ceac-blue/80 mt-1">Autorizada nº 1200000120</p>
+          </div>
+          <div class="bg-white rounded-xl px-6 py-3 flex items-center justify-center min-w-[180px]">
+            <img src="assets/logos/sne.png" alt="Sistema Nacional de Empleo" class="h-10 md:h-11 w-auto" />
+          </div>
         </div>
-        <img src="assets/logos/sne.svg" alt="Sistema Nacional de Empleo" class="h-14 w-auto" />
       </div>
     </section>
 
