@@ -3,6 +3,22 @@
    Complemento a TailwindCSS (Play CDN cargado desde index.html)
    ============================================================ */
 
+/* ---------- Fuente corporativa Bianco Serif ---------- */
+@font-face {
+  font-family: 'Bianco Serif';
+  src: url('../assets/fonts/BiancoSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Bianco Serif';
+  src: url('../assets/fonts/BiancoSerif-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 96px;

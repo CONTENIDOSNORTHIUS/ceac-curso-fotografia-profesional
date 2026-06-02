@@ -18,10 +18,12 @@
 
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 
-  <!-- Fuentes: Inter (UI) + Fraunces italic (display, estilo CEAC "trabajas") -->
+  <!-- Fuentes: Inter (UI body) + Bianco Serif (display, autohospedada) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,144,400;0,144,500;0,144,700;1,144,400;1,144,500;1,144,600;1,144,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/BiancoSerif-Regular.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="assets/fonts/BiancoSerif-Italic.ttf" as="font" type="font/ttf" crossorigin />
 
   <!-- TailwindCSS Play CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -44,7 +46,7 @@
           },
           fontFamily: {
             body: ['Inter', 'system-ui', 'sans-serif'],
-            display: ['Fraunces', 'Georgia', 'serif'],
+            display: ['Bianco Serif', 'Fraunces', 'Georgia', 'serif'],
           },
         },
       },
